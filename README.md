@@ -6,3 +6,7 @@ A dotnet background worker console template, with adds the default Microsoft Dep
 From observation, the regular dotnet console applications fail health checks and crash when within docker containers or PCF deployments, 
 
 Using the Microsoft.Extensions.Hosting eliminates this issue and adds a lot of other capabilities like DI and logging and a structured way to add additional background workers as needed within the main application
+
+The multistage docker file has been added in the project directory to help create the container as well
+
+` docker build -t hostedconsoleapp:dev . `
